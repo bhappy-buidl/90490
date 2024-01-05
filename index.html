@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90 Meetings in 90 Days Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>90 Meetings in 90 Days Tracker</h1>
+    </header>
+    <main>
+        <section id="meetings-tracker">
+            <div id="day-counter">Day <span id="current-day">1</span> of 90</div>
+            <div id="meeting-counter">
+                Meetings: <span id="meetings-attended">0</span> of 90
+                <button id="increment">+</button>
+                <button id="decrement">-</button>
+            </div>
+        </section>
+        <section id="sobriety-timer">
+            <!-- Sobriety Timer HTML -->
+        </section>
+        <section id="checklist">
+            <!-- Checklist HTML -->
+        </section>
+    </main>
+    <script>
+        // Assuming that you are starting from 0 meetings attended
+        let meetingsAttended = 0;
+    
+        // Function to increment the meetings attended
+        function incrementMeeting() {
+            if (meetingsAttended < 90) {
+                meetingsAttended += 1;
+                document.getElementById('meetings-attended').innerText = meetingsAttended;
+            }
+        }
+    
+        // Function to decrement the meetings attended
+        function decrementMeeting() {
+            if (meetingsAttended > 0) {
+                meetingsAttended -= 1;
+                document.getElementById('meetings-attended').innerText = meetingsAttended;
+            }
+        }
+    
+        // Add click event listeners to the buttons
+        document.getElementById('increment').addEventListener('click', incrementMeeting);
+        document.getElementById('decrement').addEventListener('click', decrementMeeting);
+    </script>
+    <script src="js/countdown.js"></script>
+    <script src="js/sobrietyTimer.js"></script>
+    <script src="js/checklist.js"></script>
+</body>
+</html>

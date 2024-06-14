@@ -1,0 +1,13 @@
+{
+  "name": "90490",
+  "version": "1.0.0",
+  "description": "dis dick in yo butt",
+  "main": "index.js",
+  "repository": "https://github.com/bhappy-buidl/90490",
+  "author": "nine",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "sequelize": "^6.37.3"
+  }
+}

@@ -1,57 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>90 Meetings in 90 Days Tracker</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <h1>90 Meetings in 90 Days Tracker</h1>
-    </header>
-    <main>
-        <section id="meetings-tracker">
-            <div id="day-counter">Day <span id="current-day">1</span> of 90</div>
-            <div id="meeting-counter">
-                Meetings: <span id="meetings-attended">0</span> of 90
-                <button id="increment">+</button>
-                <button id="decrement">-</button>
-            </div>
-        </section>
-        <section id="sobriety-timer">
-            <!-- Sobriety Timer HTML -->
-        </section>
-        <section id="checklist">
-            <!-- Checklist HTML -->
-        </section>
-    </main>
-    <script>
-        // Assuming that you are starting from 0 meetings attended
-        let meetingsAttended = 0;
-    
-        // Function to increment the meetings attended
-        function incrementMeeting() {
-            if (meetingsAttended < 90) {
-                meetingsAttended += 1;
-                document.getElementById('meetings-attended').innerText = meetingsAttended;
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>90 Meetings in 90 Days Tracker</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>90490</h1>
+        </header>
+        <main>
+            <section id="meetings-tracker">
+                <div id="meeting-counter">
+                    Meetings: <span id="meetings-attended">0</span> of 90
+                    <button id="increment">+</button>
+                    <button id="decrement">-</button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    Day Sober: <span id="days-Sober">0</span> of 90
+                    <button id="increment-2">+</button>
+                    <button id="decrement-2">-</button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    Day of Challenge: <span id="dayOfChallenge">0</span> of 90
+                    <button id="increment-3">+</button>
+                    <button id="decrement-3">-</button>
+                </div>
+            </section>
+ 
+        </main>
+        <script>
+            // Assuming that you are starting from 0 meetings attended
+            let meetingsAttended = 0;
+            let daysSober = 0; 
+            let dayOfChallenge = 0; // chalenge will last 90 days max .  future functioanlty can mint token when hit 90 days
+        
+            // Function to increment the meetings attended
+            function incrementMeeting() {
+                if (meetingsAttended < 90) {
+                    meetingsAttended += 1;
+                    document.getElementById('meetings-attended').innerText = meetingsAttended;
+                }
             }
-        }
-    
-        // Function to decrement the meetings attended
-        function decrementMeeting() {
-            if (meetingsAttended > 0) {
-                meetingsAttended -= 1;
-                document.getElementById('meetings-attended').innerText = meetingsAttended;
+        
+            // Function to decrement the meetings attended
+            function decrementMeeting() {
+                if (meetingsAttended > 0) {
+                    meetingsAttended -= 1;
+                    document.getElementById('meetings-attended').innerText = meetingsAttended;
+                }
             }
-        }
-    
-        // Add click event listeners to the buttons
-        document.getElementById('increment').addEventListener('click', incrementMeeting);
-        document.getElementById('decrement').addEventListener('click', decrementMeeting);
-    </script>
-    <script src="js/countdown.js"></script>
-    <script src="js/sobrietyTimer.js"></script>
-    <script src="js/checklist.js"></script>
-</body>
-</html>
+            function incrementSoberDays() {
+                if (daysSober < 90) {
+                    daysSober += 1;
+                    document.getElementById('days-Sober').innerText = daysSober;
+
+                }
+            }
+            function decrementSoberDays() {
+                if (daysSober > 0) {
+                    daysSober -= 1;
+                    document.getElementById('days-Sober').innerText = daysSober;
+                }
+            }
+            function incrementdayOfChallenge() {
+                if (dayOfChallenge < 90) {
+                    dayOfChallenge += 1;
+                    document.getElementById('dayOfChallenge').innerText = dayOfChallenge;
+
+                }
+            }
+            function decrementdayOfChallenge() {
+                if (dayOfChallenge > 0) {
+                    dayOfChallenge -= 1;
+                    document.getElementById('dayOfChallenge').innerText = dayOfChallenge;
+                }
+            }
+
+        
+            // Add click event listeners to the buttons
+            document.getElementById('increment').addEventListener('click', incrementMeeting);
+            document.getElementById('decrement').addEventListener('click', decrementMeeting);
+
+            document.getElementById('increment-3').addEventListener('click', incrementdayOfChallenge);
+            document.getElementById('decrement-3').addEventListener('click', decrementdayOfChallenge);
+            // incrment dayofChallenge
+            document.getElementById('increment-2').addEventListener('click', incrementSoberDays);
+            document.getElementById('decrement-2').addEventListener('click', decrementSoberDays);
+        </script>
+        <footer>
+            <p> call NA help line 800-539-0475</p>
+            <p> find NA Meeting</p>
+        </footer>
+    </body>
+    </html>   
+

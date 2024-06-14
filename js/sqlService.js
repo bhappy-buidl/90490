@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 // Initialize Sequelize with your MySQL database credentials
-const sequelize = new Sequelize('database_name', 'username', 'password', {
+const sequelize = new Sequelize('process.env.DATABASE', '', 'password', {
   host: 'localhost',
   dialect: 'mysql',
 });
@@ -19,3 +19,7 @@ sequelize.authenticate()
 
 // Export the Sequelize instance for use in other parts of your application
 module.exports = sequelize;
+
+export function testConnection() {
+    console.log('sqlService.js Connected')
+}

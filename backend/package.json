@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "packageManager": "yarn@4.1.1",
+  "dependencies": {
+    "express": "^4.19.2",
+    "viem": "^2.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "scripts": {
+    "start": "ts-node ./server.ts",
+    "dev": "nodemon server.ts"
+
+  }
+}

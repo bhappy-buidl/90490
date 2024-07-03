@@ -1,6 +1,6 @@
-# set up localy
+# develop localy
 
-run docker image for mysql -> define connection in .env
+1. run mysql docker container -> define connection in .env
 
 # 90490
 
@@ -10,3 +10,8 @@ run docker image for mysql -> define connection in .env
 2. add reset button to reset daysSober , meeeting attended , dayOfchallenge,
 3. SetUp MySql docker continer
 4. write to db
+
+###
+
+../contracts
+smart contract will be used to track users progress on chain

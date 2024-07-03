@@ -1,17 +1,31 @@
-# develop localy
+# Develop localy 
+### Dev COntainer 
+dev containers allow developers to easily set up projects without worrying about config
+#### clone repo thru cli ( or your preffered method ) > install dependancies > start the applicaton 
+```
+git clone https://github.com/bhappy-buidl/90490.git
+yarn install 
+cd backend 
+yarn start
 
-1. run mysql docker container -> define connection in .env
+```
 
-# 90490
 
-# define goals as I work
 
-1. make counter for days sober, day of challenge, and meetings attended - complete
-2. add reset button to reset daysSober , meeeting attended , dayOfchallenge,
-3. SetUp MySql docker continer
-4. write to db
 
-###
 
-../contracts
-smart contract will be used to track users progress on chain
+
+
+
+
+
+
+
+
+
+
+
+###### dev notes 
+##### tor mirror build backend in rust 
+https://github.com/gakonst/ethers-rs 
+##### understand selfhosting config+networking+security

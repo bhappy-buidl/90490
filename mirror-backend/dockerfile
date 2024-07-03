@@ -1,0 +1,17 @@
+# Use the official Rust image as the base
+FROM rust:latest
+
+# Set the working directory inside the container
+WORKDIR /usr/src/mirrorBackend
+
+# Copy the current directory contents into the container at /usr/src/mirrorBackend
+COPY . .
+
+# Build the Rust application
+RUN cargo build --release
+
+# Expose the port the application runs on
+EXPOSE 8080
+
+# Run the compiled Rust binary
+CMD ["./target/release/mirrorBackend"]

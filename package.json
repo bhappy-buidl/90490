@@ -1,14 +1,14 @@
 {
-  "name": "90490",
-  "version": "1.0.0",
-  "description": "dis dick in yo butt",
-  "main": "index.js",
-  "repository": "https://github.com/bhappy-buidl/90490",
-  "author": "nine",
-  "license": "MIT",
-  "private": false,
   "dependencies": {
+    "axios": "^1.7.2",
     "express": "^4.19.2",
-    "sequelize": "^6.37.3"
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "6.8",
+    "nconf": "^0.12.1",
+    "viem": "^2.17.0"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }

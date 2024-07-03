@@ -1,5 +1,6 @@
 # Develop localy 
-### Dev COntainer 
+### Dev Container 
+set up devcontainer 
 dev containers allow developers to easily set up projects without worrying about config
 #### clone repo thru cli ( or your preffered method ) > install dependancies > start the applicaton 
 ```
